@@ -46,14 +46,14 @@ $(document).ready(function () {
                 alertify.set('notifier','position', 'top-right');
                 alertify.success("Điền dữ liệu thành công, bạn hãy chờ để chúng tôi liên lạc lại");
                 setTimeout(() => {
-                    window.location.href = '/thank-you.html'
+                    window.location.href = '/napo/thank-you.html'
                 }, 1500)
             },
             error: function(jqXHR, textStatus, errorThrown) {
                 alertify.set('notifier','position', 'top-right');
                 alertify.error("Điền dữ liệu thành công, bạn hãy chờ để chúng tôi liên lạc lại");
                 setTimeout(() => {
-                    window.location.href = '/thank-you.html'
+                    window.location.href = '/napo/thank-you.html'
                 }, 1500)
             }
         });
