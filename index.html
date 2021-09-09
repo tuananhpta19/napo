@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="./vendor/css/index.css">
     <link rel="stylesheet" href="./vendor/css/phone-ring.css">
+    <link rel="stylesheet" href="./vendor/css/form.css">
 </head>
 
 <body>
@@ -48,7 +49,10 @@
                     <li class="header-top__service">
                         <a href="">Contact</a>
                     </li>
-                    <li><i class="fas fa-envelope"></i><span style="padding-left: 3px">Nhận báo giá</span></li>
+                    <li>
+                        <i class="fas fa-envelope"></i><span style="padding-left: 3px" data-toggle="modal"
+                            data-target="#advisePrice"> Nhận báo giá</span>
+                    </li>
                     <li class="header-top__social">
                         <i class="fab fa-facebook" title="Theo dõi facebook"></i>
                         <i class="fab fa-instagram" title="Theo dõi instagram"></i>
@@ -103,7 +107,10 @@
                         <li>HỢP NHỰA TRONG</li>
                         <li>KHAY THỰC PHẨM</li>
                         <li>GIỚI THIỆU</li>
-                        <li>TƯ VẤN</li>
+                        <li>
+                            <i class="fas fa-envelope"></i><span style="padding-left: 3px" data-toggle="modal"
+                                data-target="#advisePrice"> Tư vấn</span>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -732,6 +739,31 @@
             <a href="tel:+84123456789" class="pps-btn-img" title="Liên hệ">
                 <div class="phonering-alo-ph-img-circle"></div>
             </a>
+        </div>
+    </div>
+
+    <div class="modal fade" id="advisePrice" tabindex="-1" role="dialog" aria-labelledby="advisePriceTitle"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="advisePriceTitle">Nhận báo giá</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-box">
+                        <form action="">
+                            <p><input type="text" placeholder="Họ và tên" name="name" required></p>
+                            <p><input type="email" placeholder="Nhập email" name="email" required></p>
+                            <p><input type="text" placeholder="Số điện thoại" name="phone" required></p>
+                            <p><textarea name="message" id="message" placeholder="Tin nhắn"></textarea></p>
+                            <p><button type="submit" name="send" class="submit-btn">Gửi</button></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
