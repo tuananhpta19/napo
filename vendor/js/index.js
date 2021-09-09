@@ -27,6 +27,38 @@ $(document).ready(function () {
             $(".masthead-mobile").fadeIn(2000);
         }
     })
+
+
+
+    $(".submit-btn").click(() => {
+        var body = {
+            name: $("#name").val(),
+            email: $("#email").val(),
+            message: $("#message").val(),
+            phone: $("#phone").val()
+        }
+        $.ajax({ //Sử dụng Ajax gửi dữ liệu đi
+            url: 'https://script.google.com/macros/s/AKfycbwkSEvvsPOTBCJvrm536TvTJHS__G-Eykpfj6GZKzaI4OAs-vNY/exec',
+            method: 'GET',
+            dataType: 'json',
+            data: body,
+            success: function(responseData, textStatus, jqXHR) {
+                alertify.set('notifier','position', 'top-right');
+                alertify.success("Điền dữ liệu thành công, bạn hãy chờ để chúng tôi liên lạc lại");
+                setTimeout(() => {
+                    window.location.href = '/'
+                }, 1500)
+            },
+            error: function(jqXHR, textStatus, errorThrown) {
+                alertify.set('notifier','position', 'top-right');
+                alertify.error("Điền dữ liệu thành công, bạn hãy chờ để chúng tôi liên lạc lại");
+                setTimeout(() => {
+                    window.location.href = '/'
+                }, 1500)
+            }
+        });
+    
+    })
     // $(".nav").click(function(e) {
     //     e.stopPropagation();
     // });

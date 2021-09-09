@@ -25,6 +25,10 @@
     <link rel="stylesheet" href="./vendor/css/index.css">
     <link rel="stylesheet" href="./vendor/css/phone-ring.css">
     <link rel="stylesheet" href="./vendor/css/form.css">
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
 </head>
 
 <body>
@@ -754,12 +758,12 @@
                 </div>
                 <div class="modal-body">
                     <div class="form-box">
-                        <form action="">
-                            <p><input type="text" placeholder="Họ và tên" name="name" required></p>
-                            <p><input type="email" placeholder="Nhập email" name="email" required></p>
-                            <p><input type="text" placeholder="Số điện thoại" name="phone" required></p>
+                        <form>
+                            <p><input type="text" placeholder="Họ và tên" name="name" id="name" required></p>
+                            <p><input type="email" placeholder="Nhập email" name="email"  id="email" required></p>
+                            <p><input type="text" placeholder="Số điện thoại" name="phone" id="phone" required></p>
                             <p><textarea name="message" id="message" placeholder="Tin nhắn"></textarea></p>
-                            <p><button type="submit" name="send" class="submit-btn">Gửi</button></p>
+                            <p><button type="button" class="submit-btn">Gửi</button></p>
                         </form>
                     </div>
                 </div>
@@ -768,5 +772,7 @@
     </div>
 </body>
 <script src="./vendor/js/index.js"></script>
-
+<script>
+  
+</script>
 </html>
