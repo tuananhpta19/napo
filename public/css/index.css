@@ -24,11 +24,7 @@
     opacity: .1 !important;
     background-color: black;
 }
-/* masthead */
-.list-masthead-item li{
-    font-size: 13px;
-    cursor: pointer;
-}
+
 
 
 /* services */
@@ -60,24 +56,17 @@
 .services-item{
     text-align: center;
 }
-
-
-/* footer-widget */
-.footer-widget{
+/* product-item */
+.product-item{
+    position: relative;
+    border: 1px solid black; 
+    height: 350px; 
+    width: 90%;
+}
+.product-item__text{
+    position: absolute;
+    bottom: 30px;
     width: 100%;
-    height: auto;
-    padding: 30px 0;
+    text-align: center;
+    color: black;
 }
-
-
-.footer-text{
-    width: 100%;
-    background-color: rgb(74, 74, 74);
-    padding: 10px 0;
-    color: rgba(255,255,255,.5);
-}
-.footer-text span{
-    padding-right: 10px;
-}
-
-

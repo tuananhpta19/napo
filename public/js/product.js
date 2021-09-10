@@ -1,106 +1,49 @@
-var products = [
-    {
-        id: 1,
-        name: 'Hộp carton',
-        thumbnail: "https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn01.jpg",
-        img: ["https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn01-250x300.jpg", "https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn01.jpg", "https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn02-250x300.jpg"],
-        listProduct: [
-            {
-                id: "2-1",
-                name: 'Hộp carton',
-                thumbnail: "https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn01.jpg",
-                img: ["https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn01-250x300.jpg", "https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn01.jpg", "https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn02-250x300.jpg"],
-            },
-            {
-                id: "1-2",
-                name: 'Hộp carton 1',
-                thumbnail: "https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn01.jpg",
-                img: ["https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn01-250x300.jpg", "https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn01.jpg", "https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn02-250x300.jpg"],
-            },
-            {
-                id: "1-3",
-                name: 'Hộp carton 2',
-                thumbnail: "https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn01.jpg",
-                img: ["https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn01-250x300.jpg", "https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn01.jpg", "https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn02-250x300.jpg"],
-            }
-        ]
-    },
-    {
-        id: 2,
-        name: 'Ke góc',
-        thumbnail: "https://baobitoancau.com.vn/wp-content/uploads/2014/07/8-250x300.jpg",
-        img: ["https://baobitoancau.com.vn/wp-content/uploads/2014/07/8-250x300.jpg", "https://baobitoancau.com.vn/wp-content/uploads/2014/07/8-250x300.jpg", "https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn02-250x300.jpg"],
-        listProduct: [
-            {
-                id: "2-1",
-                name: 'Ke góc 1',
-                thumbnail: "https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn01.jpg",
-                img: ["https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn01-250x300.jpg", "https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn01.jpg", "https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn02-250x300.jpg"],
-            },
-            {
-                id: "2-2",
-                name: 'Ke góc 2',
-                thumbnail: "https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn01.jpg",
-                img: ["https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn01-250x300.jpg", "https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn01.jpg", "https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn02-250x300.jpg"],
-            },
-            {
-                id: "Ke góc 3",
-                name: 'Hộp carton 2',
-                thumbnail: "https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn01.jpg",
-                img: ["https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn01-250x300.jpg", "https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn01.jpg", "https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn02-250x300.jpg"],
-            }
-        ]
-    },
-    {
-        id: 3,
-        name: 'Sản phẩm nổi bật',
-        thumbnail: "https://baobitoancau.com.vn/wp-content/uploads/2014/08/3c-250x300.jpg",
-        img: ["https://baobitoancau.com.vn/wp-content/uploads/2014/08/3c-250x300.jpg", "https://baobitoancau.com.vn/wp-content/uploads/2014/08/3c-250x300.jpg", "https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn02-250x300.jpg"],
-        listProduct: [
-            {
-                id: "4-1",
-                name: 'Vách ngăn 1',
-                thumbnail: "https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn01.jpg",
-                img: ["https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn01-250x300.jpg", "https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn01.jpg", "https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn02-250x300.jpg"],
-            },
-            {
-                id: "4-2",
-                name: 'Vách ngăn 2',
-                thumbnail: "https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn01.jpg",
-                img: ["https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn01-250x300.jpg", "https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn01.jpg", "https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn02-250x300.jpg"],
-            },
-            {
-                id: "4-3",
-                name: "Vách ngăn 3",
-                thumbnail: "https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn01.jpg",
-                img: ["https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn01-250x300.jpg", "https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn01.jpg", "https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn02-250x300.jpg"],
-            }
-        ]
-    },
-    {
-        id: 4,
-        name: 'Vách ngăn',
-        thumbnail: "https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn01.jpg",
-        img: ["https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn01-250x300.jpg", "https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn01.jpg", "https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn02-250x300.jpg"],
-        listProduct: [
-            {
-                id: "4-1",
-                name: 'Sản phẩm nổi bật 1',
-                thumbnail: "https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn01.jpg",
-                img: ["https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn01-250x300.jpg", "https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn01.jpg", "https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn02-250x300.jpg"],
-            },
-            {
-                id: "4-2",
-                name: 'Sản phẩm nổi bật 2',
-                thumbnail: "https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn01.jpg",
-                img: ["https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn01-250x300.jpg", "https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn01.jpg", "https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn02-250x300.jpg"],
-            },
-            {
-                id: "4-3",
-                name: "Sản phẩm nổi bật 3",
-                thumbnail: "https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn01.jpg",
-                img: ["https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn01-250x300.jpg", "https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn01.jpg", "https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn02-250x300.jpg"],
-            }
-        ]
+const urlSearchParams = new URLSearchParams(window.location.search);
+const params = Object.fromEntries(urlSearchParams.entries());
+let pid = parseInt(params['pid']);
+if(pid){
+    let productItem = products.filter((item) => {
+        return item.id === pid
+    })
+    if(productItem.length){
+        productItem[0].listProduct.forEach((item) => {
+            console.log(item, "------")
+            let template = `
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="${item.thumbnail}" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">${item.name}</h5>
+                    </div>
+                </div>
+            `
+            $("#list-product .row").append(template)
+        })
+    }else{
+        $("#list-product .row").append("<p> Không tìm thấy sản phẩm vui lòng thử lại </p>")
     }
-]
+}else{
+    for (let index = 0; index < products[0].listProduct.length; index++) {
+        const element = products[0].listProduct[index];
+        let template = `
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="${element.thumbnail}" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">${element.name}</h5>
+                </div>
+            </div>
+        `
+        $("#list-product .row").append(template)
+    }
+}
+for (let index = 0; index < products.length; index++) {
+    const item = products[index];
+    let template = `
+        <a href="/san-pham?name=${item.nameEng}&pid=${item.id}" title="${item.name}">
+            <li>
+                ${item.name}
+            </li>
+        </a>
+    `
+    $("#list-name-product ul").append(template)
+}
+

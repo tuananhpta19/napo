@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="public/css/reset.css">
+    <link rel="stylesheet" href="public/css/parts/reset.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- bootstrap -->
@@ -22,20 +23,26 @@
     <!-- font awesom -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <!-- carosuel -->
-    <link rel="stylesheet" href="public/css/phone-ring.css">
-    <link rel="stylesheet" href="public/css/parts/header.css">
+
+    <link rel="stylesheet" href="public/css/product.css">
+    <link rel="stylesheet" href="public/css/parts/phone-ring.css">
+    <link rel="stylesheet" href="public/css/parts/form.css">
+    <link rel="stylesheet" href="public/css/parts/common.css">
     <!-- <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script> -->
     <link rel="stylesheet" href="public/vendor/libary/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="public/vendor/libary/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
     <script src="public/vendor/libary/OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
-    <!-- CSS -->
+    <!-- alertify -->
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css" />
     <!-- lazyload -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.js"
         integrity="sha512-FwqNPb8ENFXApJKNgRgYq5ok7VoOf5ImaOdzyF/xe/T5jdd/S0xq0CXBLDhpzaemxpQ61X3nLVln6KaczwhKgA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://sp.zalo.me/plugins/sdk.js"></script>
-</head>
+
+
 <body>
     <div id="header-top">
         <div class="container">
@@ -83,7 +90,8 @@
                         <a href="/san-pham">Sản phẩm</a>
                     </li>
                     <li>
-                        <a href="/lien-he">Liên hệ</a>
+                        <span style="padding-left: 3px ;color: red" data-toggle="modal" data-target="#advisePrice"> Nhận
+                            báo giá</span>
                     </li>
                 </ul>
             </div>
@@ -95,7 +103,7 @@
                 <button class="hamburger-icon"><i class="fa fa-bars" aria-hidden="true"></i></button>
             </div>
             <div class="col-6 d-flex justify-content-center align-items-center">
-                <a href="index.html" class="logo"><img src="http://napaco.vn/wp-content/uploads/2020/04/logo.png"
+                <a href="/" class="logo"><img src="http://napaco.vn/wp-content/uploads/2020/04/logo.png"
                         alt="logo-image"></a>
             </div>
         </div>
@@ -116,9 +124,71 @@
                             <a href="/san-pham">Sản phẩm</a>
                         </li>
                         <li>
-                            <a href="/lien-he">Liên hệ</a>
+                            <span style="padding-left: 3px" data-toggle="modal" data-target="#advisePrice"> Nhận báo
+                                giá</span>
                         </li>
                     </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- sản phẩm -->
+    <div class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-3" id="list-name-product">
+                    <h3>Danh sách sản phẩm</h3>
+                    <ul>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-9" id="list-product">
+                    <div class="row">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-widget">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <h6>CÔNG TY CỔ PHẦN BAO BÌ TOÀN CẦU</h6>
+                    <p>Số ĐKDN: 0800340291</p>
+                    <p>Ngày cấp: 02/08/2006 - Sửa đổi lần thứ 5 ngày: 17/06/2021</p>
+                    <p>Nơi cấp: Sở Kế Hoạch Và Đầu Tư Tỉnh Hải Dương</p>
+                    <p>Email: kinhdoanh.toancau@gmail.com</p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <h6>LIÊN HỆ GIAO DỊCH</h6>
+                    <p>Nhà Máy: Km 74, Quốc Lộ 5, Xã Kim Xuyên, Huyện Kim Thành Tỉnh Hải Dương.</p>
+                    <p>Ngày cấp: 02/08/2006 - Sửa đổi lần thứ 5 ngày: 17/06/2021</p>
+                    <p>Hotline: 0913 202 062 - 0936 438 266</p>
+                    <p>Kinh doanh 1: 0973 972 698 - Mr Dũng</p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <iframe class="w-100 h-100" src="https://www.youtube.com/embed/yH3Ec5bMY20"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-text">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <span>ABOUT</span>
+                    <span>BLOG</span>
+                    <span>CONTACT</span>
+                    <div class="product-line"></div>
+                    <span>Copyright 2021 © Napacogroup.vn</span>
+                </div>
+                <div class="col-12 col-md-8 d-flex justify-content-center align-items-center"
+                    style="text-align: center;">
+                    Địa chỉ Công ty: TT6.2D-10, Khu Đô Thị Mới Đại Kim, Phường Đại Kim, Quận Hoàng Mai, Hà Nội
                 </div>
             </div>
         </div>
@@ -131,9 +201,37 @@
                 <div class="phonering-alo-ph-img-circle"></div>
             </a>
         </div>
-        <div class="zalo-chat-widget" data-oaid="579745863508352884" data-welcome-message="Rất vui khi được hỗ trợ bạn!" data-autopopup="0" data-width="300" data-height="300"></div>
+        <div class="zalo-chat-widget" data-oaid="579745863508352884" data-welcome-message="Rất vui khi được hỗ trợ bạn!"
+            data-autopopup="0" data-width="300" data-height="300"></div>
+
     </div>
-
-
+    <div class="modal fade" id="advisePrice" tabindex="-1" role="dialog" aria-labelledby="advisePriceTitle"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="advisePriceTitle">Nhận báo giá</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-box">
+                        <form>
+                            <p><input type="text" placeholder="Họ và tên" name="name" id="name" required></p>
+                            <p><input type="email" placeholder="Nhập email" name="email" id="email" required></p>
+                            <p><input type="text" placeholder="Số điện thoại" name="phone" id="phone" required></p>
+                            <p><textarea name="message" id="message" placeholder="Tin nhắn"></textarea></p>
+                            <p><button type="button" class="submit-btn">Gửi</button></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+<script src="public/js/parts/common.js"></script>
+<script src="public/js/parts/listProduct.js"></script>
+<script src="public/js/product.js"></script>
+
 </html>

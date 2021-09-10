@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="public/css/reset.css">
+    <link rel="stylesheet" href="public/css/parts/reset.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- bootstrap -->
@@ -25,9 +25,9 @@
     <!-- carosuel -->
 
     <link rel="stylesheet" href="public/css/index.css">
-    <link rel="stylesheet" href="public/css/phone-ring.css">
-    <link rel="stylesheet" href="public/css/form.css">
-    <link rel="stylesheet" href="public/css/parts/header.css">
+    <link rel="stylesheet" href="public/css/parts/phone-ring.css">
+    <link rel="stylesheet" href="public/css/parts/form.css">
+    <link rel="stylesheet" href="public/css/parts/common.css">
     <!-- <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script> -->
     <link rel="stylesheet" href="public/vendor/libary/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="public/vendor/libary/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
@@ -90,7 +90,8 @@
                         <a href="/san-pham">Sản phẩm</a>
                     </li>
                     <li>
-                        <a href="/lien-he">Liên hệ</a>
+                        <span style="padding-left: 3px" data-toggle="modal" data-target="#advisePrice"> Nhận báo
+                            giá</span>
                     </li>
                 </ul>
             </div>
@@ -102,7 +103,7 @@
                 <button class="hamburger-icon"><i class="fa fa-bars" aria-hidden="true"></i></button>
             </div>
             <div class="col-6 d-flex justify-content-center align-items-center">
-                <a href="index.html" class="logo"><img src="http://napaco.vn/wp-content/uploads/2020/04/logo.png"
+                <a href="/" class="logo"><img src="http://napaco.vn/wp-content/uploads/2020/04/logo.png"
                         alt="logo-image"></a>
             </div>
         </div>
@@ -123,7 +124,8 @@
                             <a href="/san-pham">Sản phẩm</a>
                         </li>
                         <li>
-                            <a href="/lien-he">Liên hệ</a>
+                            <span style="padding-left: 3px" data-toggle="modal" data-target="#advisePrice"> Nhận báo
+                                giá</span>
                         </li>
                     </ul>
                 </div>
@@ -172,43 +174,8 @@
                 loading="lazy">
         </div>
     </div>
-    <div class="owl-carousel">
-        <div class="item d-flex justify-content-center align-items-center">
-            <div style="border: 1px solid black; height: 350px; width: 90%;">
-                <img class="lazy" style="max-width: 250px;max-height: 300px" loading="lazy"
-                    src="https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn02-250x300.jpg" alt="">
-            </div>
-        </div>
-        <div class="item d-flex justify-content-center align-items-center">
-            <div style="border: 1px solid black; height: 350px; width: 90%;">
-                <img class="lazy" style="max-width: 250px;max-height: 300px" loading="lazy"
-                    src="https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn02-250x300.jpg" alt="">
-            </div>
-        </div>
-        <div class="item d-flex justify-content-center align-items-center">
-            <div style="border: 1px solid black; height: 350px; width: 90%;">
-                <img class="lazy" style="max-width: 250px;max-height: 300px" loading="lazy"
-                    src="https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn01.jpg" alt="">
-            </div>
-        </div>
-        <div class="item d-flex justify-content-center align-items-center">
-            <div style="border: 1px solid black; height: 350px; width: 90%;">
-                <img class="lazy" style="max-width: 250px;max-height: 300px" loading="lazy"
-                    src="https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn02-250x300.jpg" alt="">
-            </div>
-        </div>
-        <div class="item d-flex justify-content-center align-items-center">
-            <div style="border: 1px solid black; height: 350px; width: 90%;">
-                <img class="lazy" style="max-width: 250px;max-height: 300px" loading="lazy"
-                    src="https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn02-250x300.jpg" alt="">
-            </div>
-        </div>
-        <div class="item d-flex justify-content-center align-items-center">
-            <div style="border: 1px solid black; height: 350px; width: 90%;">
-                <img class="lazy" style="max-width: 250px;max-height: 300px" loading="lazy"
-                    src="https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn01.jpg" alt="">
-            </div>
-        </div>
+    <div class="owl-carousel" id="list-product">
+
     </div>
     <div class="container">
         <h3 class="section-title">
@@ -457,10 +424,11 @@
                 <div class="phonering-alo-ph-img-circle"></div>
             </a>
         </div>
-        <div class="zalo-chat-widget" data-oaid="579745863508352884" data-welcome-message="Rất vui khi được hỗ trợ bạn!" data-autopopup="0" data-width="300" data-height="300"></div>
+        <div class="zalo-chat-widget" data-oaid="579745863508352884" data-welcome-message="Rất vui khi được hỗ trợ bạn!"
+            data-autopopup="0" data-width="300" data-height="300"></div>
 
     </div>
-      <div class="modal fade" id="advisePrice" tabindex="-1" role="dialog" aria-labelledby="advisePriceTitle"
+    <div class="modal fade" id="advisePrice" tabindex="-1" role="dialog" aria-labelledby="advisePriceTitle"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -485,6 +453,8 @@
         </div>
     </div>
 </body>
+<script src="public/js/parts/common.js"></script>
+<script src="public/js/parts/listProduct.js"></script>
 <script src="public/js/index.js"></script>
 <script>
 
