@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="public/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4.3.2/css/metro-all.min.css">
+
+    <!-- font awesom -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- carosuel -->
+    <link rel="stylesheet" href="public/css/phone-ring.css">
+    <link rel="stylesheet" href="public/css/parts/header.css">
+    <!-- <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script> -->
+    <link rel="stylesheet" href="public/vendor/libary/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="public/vendor/libary/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <script src="public/vendor/libary/OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css" />
+    <!-- lazyload -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.js"
+        integrity="sha512-FwqNPb8ENFXApJKNgRgYq5ok7VoOf5ImaOdzyF/xe/T5jdd/S0xq0CXBLDhpzaemxpQ61X3nLVln6KaczwhKgA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://sp.zalo.me/plugins/sdk.js"></script>
+</head>
+<body>
+    <div id="header-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-3 nopadding text-center text-lg-left">CÔNG TY TNHH NAPACO VIỆT NAM</div>
+                <ul
+                    class="col-lg-9 header-top__intro nopadding d-sm-none d-lg-flex justify-content-end align-items-center flex-wrap">
+                    <li>
+                        <span>0000000000/1111111111</span>
+                    </li>
+                    <!-- <li>
+                        <span class="header-top__email d-sm-none d-lg-inline-block">
+                            nanaco.group@gmail.com
+                        </span>
+                    </li> -->
+                    <li>
+                        <i class="fas fa-envelope"></i><span style="padding-left: 3px" data-toggle="modal"
+                            data-target="#advisePrice"> Nhận báo giá</span>
+                    </li>
+                    <li class="header-top__social">
+                        <i class="fab fa-facebook" title="Theo dõi facebook"></i>
+                        <i class="fab fa-instagram" title="Theo dõi instagram"></i>
+                        <i class="fab fa-twitter" title="Theo dõi twitter"></i>
+                        <i class="fas fa-envelope" title="Gửi email cho chúng tôi"></i>
+                    </li>
+            </div>
+        </div>
+    </div>
+    <div id="masthead" class="header-main w-100">
+        <div class="container d-sm-none d-md-block masthead-tablet">
+            <div class="row">
+                <a href="/" class="col-2 d-flex justify-content-center align-items-center" style="height: 100px;">
+                    <img style="max-height: 100px; width: 100%;"
+                        src="http://napaco.vn/wp-content/uploads/2020/04/logo.png" alt="lỗi">
+                </a>
+                <ul class="col-4 header-list-menu d-flex justify-content-between align-items-center list-masthead-item"
+                    style="height: 100px;">
+                    <li>
+                        <a href="/">Trang chủ</a>
+                    </li>
+                    <li>
+                        <a href="/gioi-thieu">Giới thiệu</a>
+                    </li>
+                    <li>
+                        <a href="/san-pham">Sản phẩm</a>
+                    </li>
+                    <li>
+                        <a href="/lien-he">Liên hệ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="d-sm-block d-md-none masthead-mobile w-100">
+        <div class="row">
+            <div class="col-3 d-flex justify-content-start align-items-center">
+                <button class="hamburger-icon"><i class="fa fa-bars" aria-hidden="true"></i></button>
+            </div>
+            <div class="col-6 d-flex justify-content-center align-items-center">
+                <a href="index.html" class="logo"><img src="http://napaco.vn/wp-content/uploads/2020/04/logo.png"
+                        alt="logo-image"></a>
+            </div>
+        </div>
+        <div class="bg-color d-sm-block d-md-none">
+            <div class="side-bar">
+                <div class="side-bar-content">
+                    <div class="w-100 text-right">
+                        <button class="cross-btn"><i class="fa fa-times" aria-hidden="true"></i></button>
+                    </div>
+                    <ul class="side-bar-item">
+                        <li>
+                            <a href="/">Trang chủ</a>
+                        </li>
+                        <li>
+                            <a href="/gioi-thieu">Giới thiệu</a>
+                        </li>
+                        <li>
+                            <a href="/san-pham">Sản phẩm</a>
+                        </li>
+                        <li>
+                            <a href="/lien-he">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hotline-bar">
+        <div class="phonering-alo-phone phonering-alo-green phonering-alo-show" id="phonering-alo-phoneIcon">
+            <div class="phonering-alo-ph-circle"></div>
+            <div class="phonering-alo-ph-circle-fill"></div>
+            <a href="tel:+84123456789" class="pps-btn-img" title="Liên hệ">
+                <div class="phonering-alo-ph-img-circle"></div>
+            </a>
+        </div>
+        <div class="zalo-chat-widget" data-oaid="579745863508352884" data-welcome-message="Rất vui khi được hỗ trợ bạn!" data-autopopup="0" data-width="300" data-height="300"></div>
+    </div>
+
+
+</body>
+</html>

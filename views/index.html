@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="public/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4.3.2/css/metro-all.min.css">
+
+    <!-- font awesom -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- carosuel -->
+
+    <link rel="stylesheet" href="public/css/index.css">
+    <link rel="stylesheet" href="public/css/phone-ring.css">
+    <link rel="stylesheet" href="public/css/form.css">
+    <link rel="stylesheet" href="public/css/parts/header.css">
+    <!-- <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script> -->
+    <link rel="stylesheet" href="public/vendor/libary/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="public/vendor/libary/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <script src="public/vendor/libary/OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
+    <!-- alertify -->
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css" />
+    <!-- lazyload -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.js"
+        integrity="sha512-FwqNPb8ENFXApJKNgRgYq5ok7VoOf5ImaOdzyF/xe/T5jdd/S0xq0CXBLDhpzaemxpQ61X3nLVln6KaczwhKgA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://sp.zalo.me/plugins/sdk.js"></script>
+
+
+<body>
+    <div id="header-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-3 nopadding text-center text-lg-left">CÔNG TY TNHH NAPACO VIỆT NAM</div>
+                <ul
+                    class="col-lg-9 header-top__intro nopadding d-sm-none d-lg-flex justify-content-end align-items-center flex-wrap">
+                    <li>
+                        <span>0000000000/1111111111</span>
+                    </li>
+                    <!-- <li>
+                        <span class="header-top__email d-sm-none d-lg-inline-block">
+                            nanaco.group@gmail.com
+                        </span>
+                    </li> -->
+                    <li>
+                        <i class="fas fa-envelope"></i><span style="padding-left: 3px" data-toggle="modal"
+                            data-target="#advisePrice"> Nhận báo giá</span>
+                    </li>
+                    <li class="header-top__social">
+                        <i class="fab fa-facebook" title="Theo dõi facebook"></i>
+                        <i class="fab fa-instagram" title="Theo dõi instagram"></i>
+                        <i class="fab fa-twitter" title="Theo dõi twitter"></i>
+                        <i class="fas fa-envelope" title="Gửi email cho chúng tôi"></i>
+                    </li>
+            </div>
+        </div>
+    </div>
+    <div id="masthead" class="header-main w-100">
+        <div class="container d-sm-none d-md-block masthead-tablet">
+            <div class="row">
+                <a href="/" class="col-2 d-flex justify-content-center align-items-center" style="height: 100px;">
+                    <img style="max-height: 100px; width: 100%;"
+                        src="http://napaco.vn/wp-content/uploads/2020/04/logo.png" alt="lỗi">
+                </a>
+                <ul class="col-4 header-list-menu d-flex justify-content-between align-items-center list-masthead-item"
+                    style="height: 100px;">
+                    <li>
+                        <a href="/">Trang chủ</a>
+                    </li>
+                    <li>
+                        <a href="/gioi-thieu">Giới thiệu</a>
+                    </li>
+                    <li>
+                        <a href="/san-pham">Sản phẩm</a>
+                    </li>
+                    <li>
+                        <a href="/lien-he">Liên hệ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="d-sm-block d-md-none masthead-mobile w-100">
+        <div class="row">
+            <div class="col-3 d-flex justify-content-start align-items-center">
+                <button class="hamburger-icon"><i class="fa fa-bars" aria-hidden="true"></i></button>
+            </div>
+            <div class="col-6 d-flex justify-content-center align-items-center">
+                <a href="index.html" class="logo"><img src="http://napaco.vn/wp-content/uploads/2020/04/logo.png"
+                        alt="logo-image"></a>
+            </div>
+        </div>
+        <div class="bg-color d-sm-block d-md-none">
+            <div class="side-bar">
+                <div class="side-bar-content">
+                    <div class="w-100 text-right">
+                        <button class="cross-btn"><i class="fa fa-times" aria-hidden="true"></i></button>
+                    </div>
+                    <ul class="side-bar-item">
+                        <li>
+                            <a href="/">Trang chủ</a>
+                        </li>
+                        <li>
+                            <a href="/gioi-thieu">Giới thiệu</a>
+                        </li>
+                        <li>
+                            <a href="/san-pham">Sản phẩm</a>
+                        </li>
+                        <li>
+                            <a href="/lien-he">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="banner" class="carousel slide z-depth-1-half" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#banner" data-slide-to="0" class="active"></li>
+            <li data-target="#banner" data-slide-to="1"></li>
+            <li data-target="#banner" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="https://baobitoancau.com.vn/wp-content/uploads/2021/01/slide05.jpg"
+                    alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="https://baobitoancau.com.vn/wp-content/uploads/2021/01/slide05.jpg"
+                    alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="https://baobitoancau.com.vn/wp-content/uploads/2021/01/slide05.jpg"
+                    alt="Third slide">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#banner" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true" style="width: 40px;height: 40px"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#banner" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true" style="width: 40px;height: 40px"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <div class="container">
+        <h3 class="section-title">
+            <b class="section-title-line"></b>
+            <span style="text-align: center;">Danh mục sản phẩm</span>
+            <b class="section-title-line"></b>
+        </h3>
+        <div class="section-img d-flex justify-content-center align-items-center w-100" style="margin-bottom: 30px;">
+            <img style="max-width: 300px; max-height:34px;"
+                src="https://baobitoancau.com.vn/wp-content/uploads/2021/01/title-bgr-1.png" class="lazy" alt=""
+                loading="lazy">
+        </div>
+    </div>
+    <div class="owl-carousel">
+        <div class="item d-flex justify-content-center align-items-center">
+            <div style="border: 1px solid black; height: 350px; width: 90%;">
+                <img class="lazy" style="max-width: 250px;max-height: 300px" loading="lazy"
+                    src="https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn02-250x300.jpg" alt="">
+            </div>
+        </div>
+        <div class="item d-flex justify-content-center align-items-center">
+            <div style="border: 1px solid black; height: 350px; width: 90%;">
+                <img class="lazy" style="max-width: 250px;max-height: 300px" loading="lazy"
+                    src="https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn02-250x300.jpg" alt="">
+            </div>
+        </div>
+        <div class="item d-flex justify-content-center align-items-center">
+            <div style="border: 1px solid black; height: 350px; width: 90%;">
+                <img class="lazy" style="max-width: 250px;max-height: 300px" loading="lazy"
+                    src="https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn01.jpg" alt="">
+            </div>
+        </div>
+        <div class="item d-flex justify-content-center align-items-center">
+            <div style="border: 1px solid black; height: 350px; width: 90%;">
+                <img class="lazy" style="max-width: 250px;max-height: 300px" loading="lazy"
+                    src="https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn02-250x300.jpg" alt="">
+            </div>
+        </div>
+        <div class="item d-flex justify-content-center align-items-center">
+            <div style="border: 1px solid black; height: 350px; width: 90%;">
+                <img class="lazy" style="max-width: 250px;max-height: 300px" loading="lazy"
+                    src="https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn02-250x300.jpg" alt="">
+            </div>
+        </div>
+        <div class="item d-flex justify-content-center align-items-center">
+            <div style="border: 1px solid black; height: 350px; width: 90%;">
+                <img class="lazy" style="max-width: 250px;max-height: 300px" loading="lazy"
+                    src="https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn01.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h3 class="section-title">
+            <b class="section-title-line"></b>
+            <span style="text-align: center;">Danh mục sản phẩm</span>
+            <b class="section-title-line"></b>
+        </h3>
+        <div class="section-img d-flex justify-content-center align-items-center w-100" style="margin-bottom: 30px;">
+            <img style="max-width: 300px; max-height:34px;"
+                src="https://baobitoancau.com.vn/wp-content/uploads/2021/01/title-bgr-1.png" class="lazy" alt=""
+                loading="lazy">
+        </div>
+    </div>
+    <div class="owl-carousel">
+        <div class="item d-flex justify-content-center align-items-center">
+            <div style="border: 1px solid black; height: 350px; width: 90%;">
+                <img class="lazy" style="max-width: 250px;max-height: 300px" loading="lazy"
+                    src="https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn02-250x300.jpg" alt="">
+            </div>
+        </div>
+        <div class="item d-flex justify-content-center align-items-center">
+            <div style="border: 1px solid black; height: 350px; width: 90%;">
+                <img class="lazy" style="max-width: 250px;max-height: 300px" loading="lazy"
+                    src="https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn02-250x300.jpg" alt="">
+            </div>
+        </div>
+        <div class="item d-flex justify-content-center align-items-center">
+            <div style="border: 1px solid black; height: 350px; width: 90%;">
+                <img class="lazy" style="max-width: 250px;max-height: 300px" loading="lazy"
+                    src="https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn01.jpg" alt="">
+            </div>
+        </div>
+        <div class="item d-flex justify-content-center align-items-center">
+            <div style="border: 1px solid black; height: 350px; width: 90%;">
+                <img class="lazy" style="max-width: 250px;max-height: 300px" loading="lazy"
+                    src="https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn02-250x300.jpg" alt="">
+            </div>
+        </div>
+        <div class="item d-flex justify-content-center align-items-center">
+            <div style="border: 1px solid black; height: 350px; width: 90%;">
+                <img class="lazy" style="max-width: 250px;max-height: 300px" loading="lazy"
+                    src="https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn02-250x300.jpg" alt="">
+            </div>
+        </div>
+        <div class="item d-flex justify-content-center align-items-center">
+            <div style="border: 1px solid black; height: 350px; width: 90%;">
+                <img class="lazy" style="max-width: 250px;max-height: 300px" loading="lazy"
+                    src="https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn01.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h3 class="section-title">
+            <b class="section-title-line"></b>
+            <span style="text-align: center;">Danh mục sản phẩm</span>
+            <b class="section-title-line"></b>
+        </h3>
+        <div class="section-img d-flex justify-content-center align-items-center w-100" style="margin-bottom: 30px;">
+            <img style="max-width: 300px; max-height:34px;"
+                src="https://baobitoancau.com.vn/wp-content/uploads/2021/01/title-bgr-1.png" class="lazy" alt=""
+                loading="lazy">
+        </div>
+    </div>
+    <div class="owl-carousel">
+        <div class="item d-flex justify-content-center align-items-center">
+            <div style="border: 1px solid black; height: 350px; width: 90%;">
+                <img class="lazy" style="max-width: 250px;max-height: 300px" loading="lazy"
+                    src="https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn02-250x300.jpg" alt="">
+            </div>
+        </div>
+        <div class="item d-flex justify-content-center align-items-center">
+            <div style="border: 1px solid black; height: 350px; width: 90%;">
+                <img class="lazy" style="max-width: 250px;max-height: 300px" loading="lazy"
+                    src="https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn02-250x300.jpg" alt="">
+            </div>
+        </div>
+        <div class="item d-flex justify-content-center align-items-center">
+            <div style="border: 1px solid black; height: 350px; width: 90%;">
+                <img class="lazy" style="max-width: 250px;max-height: 300px" loading="lazy"
+                    src="https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn01.jpg" alt="">
+            </div>
+        </div>
+        <div class="item d-flex justify-content-center align-items-center">
+            <div style="border: 1px solid black; height: 350px; width: 90%;">
+                <img class="lazy" style="max-width: 250px;max-height: 300px" loading="lazy"
+                    src="https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn02-250x300.jpg" alt="">
+            </div>
+        </div>
+        <div class="item d-flex justify-content-center align-items-center">
+            <div style="border: 1px solid black; height: 350px; width: 90%;">
+                <img class="lazy" style="max-width: 250px;max-height: 300px" loading="lazy"
+                    src="https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn02-250x300.jpg" alt="">
+            </div>
+        </div>
+        <div class="item d-flex justify-content-center align-items-center">
+            <div style="border: 1px solid black; height: 350px; width: 90%;">
+                <img class="lazy" style="max-width: 250px;max-height: 300px" loading="lazy"
+                    src="https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn01.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h3 class="section-title">
+            <b class="section-title-line"></b>
+            <span style="text-align: center;">Danh mục sản phẩm</span>
+            <b class="section-title-line"></b>
+        </h3>
+        <div class="section-img d-flex justify-content-center align-items-center w-100" style="margin-bottom: 30px;">
+            <img style="max-width: 300px; max-height:34px;"
+                src="https://baobitoancau.com.vn/wp-content/uploads/2021/01/title-bgr-1.png" class="lazy" alt=""
+                loading="lazy">
+        </div>
+    </div>
+    <div class="owl-carousel">
+        <div class="item d-flex justify-content-center align-items-center">
+            <div style="border: 1px solid black; height: 350px; width: 90%;">
+                <img class="lazy" style="max-width: 250px;max-height: 300px" loading="lazy"
+                    src="https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn02-250x300.jpg" alt="">
+            </div>
+        </div>
+        <div class="item d-flex justify-content-center align-items-center">
+            <div style="border: 1px solid black; height: 350px; width: 90%;">
+                <img class="lazy" style="max-width: 250px;max-height: 300px" loading="lazy"
+                    src="https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn02-250x300.jpg" alt="">
+            </div>
+        </div>
+        <div class="item d-flex justify-content-center align-items-center">
+            <div style="border: 1px solid black; height: 350px; width: 90%;">
+                <img class="lazy" style="max-width: 250px;max-height: 300px" loading="lazy"
+                    src="https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn01.jpg" alt="">
+            </div>
+        </div>
+        <div class="item d-flex justify-content-center align-items-center">
+            <div style="border: 1px solid black; height: 350px; width: 90%;">
+                <img class="lazy" style="max-width: 250px;max-height: 300px" loading="lazy"
+                    src="https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn02-250x300.jpg" alt="">
+            </div>
+        </div>
+        <div class="item d-flex justify-content-center align-items-center">
+            <div style="border: 1px solid black; height: 350px; width: 90%;">
+                <img class="lazy" style="max-width: 250px;max-height: 300px" loading="lazy"
+                    src="https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn02-250x300.jpg" alt="">
+            </div>
+        </div>
+        <div class="item d-flex justify-content-center align-items-center">
+            <div style="border: 1px solid black; height: 350px; width: 90%;">
+                <img class="lazy" style="max-width: 250px;max-height: 300px" loading="lazy"
+                    src="https://baobitoancau.com.vn/wp-content/uploads/2021/01/hvn01.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="services dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4 services-item">
+                    <div class="icon-center">
+                        <i class="fas fa-cannabis icon-inner"></i>
+                    </div>
+                    <h6>Uy tín</h6>
+                    <p>Napaco là đơn vị nhựa uy tín số 1 Việt Nam</p>
+                </div>
+                <div class="col-12 col-md-4 services-item">
+                    <div class="icon-center">
+                        <i class="fas fa-cannabis icon-inner"></i>
+                    </div>
+                    <h6>Uy tín</h6>
+                    <p>Napaco là đơn vị nhựa uy tín số 1 Việt Nam</p>
+                </div>
+                <div class="col-12 col-md-4 services-item">
+                    <div class="icon-center">
+                        <i class="fas fa-cannabis icon-inner"></i>
+                    </div>
+                    <h6>Uy tín</h6>
+                    <p>Napaco là đơn vị nhựa uy tín số 1 Việt Nam</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h3 class="section-title">
+            <b class="section-title-line"></b>
+            <span style="text-align: center;">Địa chỉ trên bản đồ</span>
+            <b class="section-title-line"></b>
+        </h3>
+        <div class="section-img d-flex justify-content-center align-items-center w-100" style="margin-bottom: 30px;">
+            <img style="max-width: 300px; max-height:34px;"
+                src="https://baobitoancau.com.vn/wp-content/uploads/2021/01/title-bgr-1.png" class="lazy" alt=""
+                loading="lazy">
+        </div>
+    </div>
+    <div id="map">
+        <iframe class="w-100"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29793.980385265444!2d105.81941120567042!3d21.022778758775424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab9bd9861ca1%3A0xe7887f7b72ca17a9!2zSMOgIE7hu5lpLCBIb8OgbiBLaeG6v20sIEjDoCBO4buZaSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2sus!4v1631287961463!5m2!1svi!2sus"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <div class="footer-widget">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <h6>CÔNG TY CỔ PHẦN BAO BÌ TOÀN CẦU</h6>
+                    <p>Số ĐKDN: 0800340291</p>
+                    <p>Ngày cấp: 02/08/2006 - Sửa đổi lần thứ 5 ngày: 17/06/2021</p>
+                    <p>Nơi cấp: Sở Kế Hoạch Và Đầu Tư Tỉnh Hải Dương</p>
+                    <p>Email: kinhdoanh.toancau@gmail.com</p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <h6>LIÊN HỆ GIAO DỊCH</h6>
+                    <p>Nhà Máy: Km 74, Quốc Lộ 5, Xã Kim Xuyên, Huyện Kim Thành Tỉnh Hải Dương.</p>
+                    <p>Ngày cấp: 02/08/2006 - Sửa đổi lần thứ 5 ngày: 17/06/2021</p>
+                    <p>Hotline: 0913 202 062 - 0936 438 266</p>
+                    <p>Kinh doanh 1: 0973 972 698 - Mr Dũng</p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <iframe class="w-100 h-100" src="https://www.youtube.com/embed/yH3Ec5bMY20"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-text">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <span>ABOUT</span>
+                    <span>BLOG</span>
+                    <span>CONTACT</span>
+                    <div class="product-line"></div>
+                    <span>Copyright 2021 © Napacogroup.vn</span>
+                </div>
+                <div class="col-12 col-md-8 d-flex justify-content-center align-items-center"
+                    style="text-align: center;">
+                    Địa chỉ Công ty: TT6.2D-10, Khu Đô Thị Mới Đại Kim, Phường Đại Kim, Quận Hoàng Mai, Hà Nội
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hotline-bar">
+        <div class="phonering-alo-phone phonering-alo-green phonering-alo-show" id="phonering-alo-phoneIcon">
+            <div class="phonering-alo-ph-circle"></div>
+            <div class="phonering-alo-ph-circle-fill"></div>
+            <a href="tel:+84123456789" class="pps-btn-img" title="Liên hệ">
+                <div class="phonering-alo-ph-img-circle"></div>
+            </a>
+        </div>
+        <div class="zalo-chat-widget" data-oaid="579745863508352884" data-welcome-message="Rất vui khi được hỗ trợ bạn!" data-autopopup="0" data-width="300" data-height="300"></div>
+
+    </div>
+      <div class="modal fade" id="advisePrice" tabindex="-1" role="dialog" aria-labelledby="advisePriceTitle"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="advisePriceTitle">Nhận báo giá</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-box">
+                        <form>
+                            <p><input type="text" placeholder="Họ và tên" name="name" id="name" required></p>
+                            <p><input type="email" placeholder="Nhập email" name="email" id="email" required></p>
+                            <p><input type="text" placeholder="Số điện thoại" name="phone" id="phone" required></p>
+                            <p><textarea name="message" id="message" placeholder="Tin nhắn"></textarea></p>
+                            <p><button type="button" class="submit-btn">Gửi</button></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="public/js/index.js"></script>
+<script>
+
+</script>
+
+</html>
